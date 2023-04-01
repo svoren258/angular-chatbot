@@ -9,13 +9,18 @@
     >{{ message }}
       <br></div>
   </div>
-  <form (ngSubmit)="sendMessage($event)">
-    <input
-      [ngModelOptions]="ngModelOptions"
-      type="text"
-      [(ngModel)]="message"
-      placeholder="Enter a message"
-    />
-    <button type="submit">Send message</button>
+  <form class="form-container" nz-form (ngSubmit)="sendMessage($event)">
+    <nz-form-item>
+      <nz-form-control>
+        <input
+          nz-input
+          [ngModelOptions]="ngModelOptions"
+          type="text"
+          [(ngModel)]="message"
+          placeholder="Enter a message"
+        />
+      </nz-form-control>
+    </nz-form-item>
+    <button class="submit-btn" nz-button nzType="primary">Send message</button>
   </form>
 </div>

@@ -1,0 +1,44 @@
+$primary-color: rgb(24, 144, 255);
+
+.chatbot-container {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background: rgb(207,212,23);
+  background: linear-gradient(90deg, rgba(207,212,23,1) 9%, rgba(0,212,255,1) 100%);
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.messages-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.message-container {
+  padding: 5px 30px;
+  border-radius: 15px;
+  max-width: 50%;
+  width: fit-content;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  color: white;
+  border: 1px solid $primary-color;
+  background: $primary-color;
+}

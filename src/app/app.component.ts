@@ -2,12 +2,15 @@ import { AsyncPipe, NgForOf, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzInputModule } from 'ng-zorro-antd/input';
 import { Observable, scan, Subject, tap } from 'rxjs';
 import { WebsocketService } from '../services/websocket.service';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, AsyncPipe, NgIf, FormsModule, NgForOf],
+  imports: [RouterModule, AsyncPipe, NgIf, FormsModule, NgForOf, NzButtonModule, NzFormModule, NzInputModule],
   selector: 'angular-chatbot-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
